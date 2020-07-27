@@ -14,7 +14,6 @@ cur.execute('DELETE FROM Counts')
 fname = input('Enter file name: ')
 if (len(fname) < 1): fname = 'mbox.txt'
 fh = open(fname)
-list_1 =[]
 for line in fh:
     if not line.startswith('From: '): continue
     pieces = line.split()
